@@ -1,3 +1,5 @@
+//Quote Object
+
 let quote = document.getElementById("quote");
 let author = document.getElementById("author");
 
@@ -34,12 +36,22 @@ let quoteObj = {
     
 };
 
+//Quote Random Button
 let btn = document.getElementById("btn");
 
 btn.addEventListener("click", function (){
     quoteObj.RandomQuote();
-    quote.innerHTML = Q;
+    quote.innerHTML = "\"" + Q +  "\"";
     author.innerHTML = A;
     btn.innerText = "Change Quote";
 });
 
+//Add New Quote
+let btnN = document.getElementById("btnN");
+
+btnN.addEventListener("click", function(){
+    let quoteNew = document.getElementById("quoteNew").value;
+    let authorNew = document.getElementById("authorNew").value;
+    quoteObj.Quotes.push(quoteNew);
+    quoteObj.Authors.push(authorNew);
+});

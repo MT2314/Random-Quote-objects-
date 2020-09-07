@@ -10,7 +10,7 @@
     width: 100vw;
 }
 
-.card{
+.first{
     position:relative;
     padding:10px;
     background-color: #4587bd;
@@ -21,12 +21,14 @@
     border-radius: 25px;
 }
 
+
 .quoteCon {
     height:300px;
 }
 
 .quote {
     
+    color:white;
     height: 200px;
     
 }
@@ -38,4 +40,29 @@
     height:30px;
     width:200px;
     margin-left: calc(37.5vw - 100px);
+}
+
+.add{
+    position:relative;
+    padding:10px;
+    background-color: #4587bd;
+    height:20vh;
+    width:90vw;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.quoteNew{
+    width:80vw;
+    height:50px;
+}
+
+
+.authorNew{
+    margin-top:10px;
+}
+
+.btnN{
+    width: 100px;
 }
