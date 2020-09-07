@@ -34,10 +34,12 @@ let quoteObj = {
     
 };
 
-document.getElementById("btn").addEventListener("click", function (){
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function (){
     quoteObj.RandomQuote();
     quote.innerHTML = Q;
     author.innerHTML = A;
-
+    btn.innerText = "Change Quote";
 });
 

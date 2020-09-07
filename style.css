@@ -5,23 +5,37 @@
 
 .container {
     
-    background-color: #4587bd;
+    
     height: 100vh;
     width: 100vw;
+}
+
+.card{
+    position:relative;
+    padding:10px;
+    background-color: #4587bd;
+    height:55vh;
+    width:75vw;
+    margin: auto;
+    top: 50px;
+    border-radius: 25px;
+}
+
+.quoteCon {
+    height:300px;
+}
+
+.quote {
+    
+    height: 200px;
+    
 }
 
 .btn {
     
     position:relative;
-    height:25px;
+    top:30px;
+    height:30px;
     width:200px;
-    left: calc(50vw - 100px);
-    top: 25vh;
-
-}
-
-.quote{
-
-    background-color:#FFFFFF;
-
+    margin-left: calc(37.5vw - 100px);
 }
