@@ -48,10 +48,21 @@ btn.addEventListener("click", function (){
 
 //Add New Quote
 let btnN = document.getElementById("btnN");
+let quoteNew
+let authorNew
+let added
 
 btnN.addEventListener("click", function(){
-    let quoteNew = document.getElementById("quoteNew").value;
-    let authorNew = document.getElementById("authorNew").value;
+    quoteNew = document.getElementById("quoteNew").value;
+    authorNew = document.getElementById("authorNew").value;
     quoteObj.Quotes.push(quoteNew);
     quoteObj.Authors.push(authorNew);
+
+    //Display Last Added Quote
+    document.getElementById("quoteLast").innerHTML = quoteNew;
+    document.getElementById("authorLast").innerHTML = authorNew;
 });
+
+
+
+

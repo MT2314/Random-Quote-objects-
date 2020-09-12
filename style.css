@@ -3,66 +3,78 @@
  padding:0;
 }
 
-.container {
-    
-    
-    height: 100vh;
-    width: 100vw;
-}
+/* Quote Display */
 
 .first{
-    position:relative;
-    padding:10px;
+    position: relative;
+    height:50vh;
     background-color: #4587bd;
-    height:55vh;
-    width:75vw;
-    margin: auto;
-    top: 50px;
-    border-radius: 25px;
-}
-
-
-.quoteCon {
-    height:300px;
+    margin: 25px;
+    padding:10px;
 }
 
 .quote {
-    
     color:white;
-    height: 200px;
-    
+    height: 30vh; 
 }
 
-.btn {
-    
-    position:relative;
-    top:30px;
-    height:30px;
-    width:200px;
-    margin-left: calc(37.5vw - 100px);
-}
+
+/* Add Quote */
 
 .add{
-    position:relative;
-    padding:10px;
-    background-color: #4587bd;
-    height:20vh;
-    width:90vw;
-    margin:auto;
-    margin-top: 100px;
-    border-radius: 10px;
+
+    position: relative;
+    background-color: #750075;
+    height:25vh;
+    margin: 15px;
+    
+}
+
+.addQuote{
+
+    height: 10vh;
+    background-color:#c995c9;
+    text-align: center;
+    margin-left: 0;
 }
 
 .quoteNew{
-    width:80vw;
-    height:50px;
-}
 
+    width: 85vw;
+    height: 50px;
+    text-align: center;
+}
 
 .authorNew{
-    margin-top:10px;
+
+    margin:25px;
+    width: 60vw;
+    height: 30px;
+    text-align: center;
 }
 
-.btnN{
-    width: 100px;
+
+/* Last Quote Added */
+
+.last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    height: 12.5vh;
+    width: 100vw;
+}
+
+.lastQuote{
+
+    color:black;
+    
+}
+
+.lastAuthor{
+
+    align-self:flex-end;
+    color:black;
+    
 }
